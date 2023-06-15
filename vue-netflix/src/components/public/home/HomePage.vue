@@ -1,12 +1,20 @@
 <template>
     <div class="home-page">
-        <NavBarVue/>
+        <NavBarVue
+        />
+        <BannerComp 
+            first="Unlimited movies, TV shows, and more"
+            third="Watch anywhere. Cancel anytime."
+            fourth="We plug Individuals, Startups, SMEs and Higher Education"
+            button="Get Started"
+        />
     </div>
 </template>
 
 
 <script setup lang="ts">
 // Imports
+import BannerComp from '../../reusables/BannerComp.vue';
 import NavBarVue from './NavBar.vue';
 
 
