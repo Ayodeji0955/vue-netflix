@@ -1,7 +1,14 @@
 <template>
-  <div class="banner">
-      <h1>This is an about page</h1>
-  </div>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="~@/assets/images/img_1/favicon.png">
+      </a>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 </template>
 
 
