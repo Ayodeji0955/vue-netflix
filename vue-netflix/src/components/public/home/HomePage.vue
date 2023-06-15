@@ -14,18 +14,19 @@ import BannerView from './BannerView.vue';
 <style lang="scss" scoped>
 
 .home-page {
-    background-image: url('~@/assets/images/img_1/wrk.png');
+    background-image: url('@/assets/images/img_1/bck.jpg');
+    // background-color:aqua;
     background-position:center;
     background-size:cover;
     // padding-top: 7rem;
-    height: 100vh;
+    height: 80vh;
 }
 
-@media (min-width: 1024px) {
-    .about {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-    }
-}
+// @media (min-width: 1024px) {
+//     .about {
+//         min-height: 100vh;
+//         display: flex;
+//         align-items: center;
+//     }
+// }
 </style>
