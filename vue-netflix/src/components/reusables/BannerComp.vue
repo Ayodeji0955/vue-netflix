@@ -19,8 +19,8 @@
                         <div class="col banner-comp__cta">
                             <form class="row g-2 justify-content-center">
                                 <div class="col-auto input-group-lg pt-2">
-                                    <label for="inputPassword2" class="visually-hidden">Password</label>
-                                    <input type="password" class="form-control banner-comp__sub-col--input" id="inputPassword2" placeholder="Email address" aria-describedby="inputGroup-sizing-lg">
+                                    <!-- <label for="inputPassword2" class="visually-hidden">{{ props.password }}</label> -->
+                                    <input type="email" class="form-control banner-comp__sub-col--input" id="inputPassword2" placeholder="Email address" aria-describedby="inputGroup-sizing-lg">
                                 </div>
                                 <div class="col-auto pt-1">
                                     <button v-if="props.button" type="button"  class="banner-comp__cta--btn banner-comp__cta--button">
@@ -98,6 +98,7 @@
     }
 
     &__sub-col {
+
         &--input{
             background-color: transparent;
             transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
@@ -106,9 +107,10 @@
             padding: 0.8rem 2.5rem;
             // padding-left:1rem;
             // padding-right:1rem;
-            border: 2px solid white;
+            border: 0.5px solid white;
             font-weight:  map-get($font-weights, bold);
             box-shadow: 0px 0px 0px;
+            border-radius: $radius-md;
         }
     }
   

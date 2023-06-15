@@ -8,6 +8,8 @@
             fourth="We plug Individuals, Startups, SMEs and Higher Education"
             button="Get Started"
         />
+        <hr class="home-page__hr">
+        <EnjoyTv/>
     </div>
 </template>
 
@@ -16,6 +18,7 @@
 // Imports
 import BannerComp from '../../reusables/BannerComp.vue';
 import NavBarVue from './NavBar.vue';
+import EnjoyTv from './EnjoyTv.vue';
 
 
 </script>
@@ -33,6 +36,10 @@ import NavBarVue from './NavBar.vue';
     background-size:cover;
     height: 80vh;
     opacity: rgb(0 0 0 / 40%);
+
+    &__hr {
+        border: 5px solid grey;
+    }
 }
 
 @media (min-width: 1024px) {
