@@ -20,9 +20,9 @@
                             <form class="row g-2 justify-content-center">
                                 <div class="col-auto input-group-lg pt-2">
                                     <label for="inputPassword2" class="visually-hidden">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password" aria-describedby="inputGroup-sizing-lg">
+                                    <input type="password" class="form-control banner-comp__sub-col--input" id="inputPassword2" placeholder="Email address" aria-describedby="inputGroup-sizing-lg">
                                 </div>
-                                <div class="col-auto">
+                                <div class="col-auto pt-1">
                                     <button v-if="props.button" type="button"  class="banner-comp__cta--btn banner-comp__cta--button">
                                         {{ props.button }} <i class="fa-solid fa-greater-than"></i>
                                     </button>
@@ -94,6 +94,21 @@
             font-weight: map-get($font-weights, medium);
             display: block;
             color: $color-light;
+        }
+    }
+
+    &__sub-col {
+        &--input{
+            background-color: transparent;
+            transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s;
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+            padding: 0.8rem 2.5rem;
+            // padding-left:1rem;
+            // padding-right:1rem;
+            border: 2px solid white;
+            font-weight:  map-get($font-weights, bold);
+            box-shadow: 0px 0px 0px;
         }
     }
   
