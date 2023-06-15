@@ -2,17 +2,17 @@
 // big buttons
 
 
-@mixin cta{
+@mixin cta {
     &--btn{
         background-color: white;
         border-radius: $radius-md;
         color: white;
-        padding: 16px 42px;
+        padding: 10px 30px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: $font-xsm;
-        font-weight:  map-get($font-weights, bold);
+        font-size: $font-sm;
+        font-weight:  map-get($font-weights, medium);
         margin: 5px 2px;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
@@ -20,14 +20,14 @@
     }
 
     &--button{
-        background-color: $color-primary;
-        color: $color-black;
-        border: 2px solid $color-primary;
+        background-color: $color-sec;
+        color: $color-light;
+        border: 2px solid $color-sec;
     }
 
     &--button:hover{
-        background-color: white;
-        color:  $color-black;
+        background-color: $color-sec;
+        color:  $color-light;
     }
 }
 
@@ -38,26 +38,26 @@
         background-color: white;
         border-radius: $radius-md;
         color: white;
-        padding: 9px 14px;
+        padding: 4px 20px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: $font-xsm;
-        font-weight:  map-get($font-weights, bold);
-        margin: 5px 2px;
+        font-weight:  map-get($font-weights, medium);
+        // margin: 5px 2px;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
         cursor: pointer;
     }
 
     &--button{
-        background-color: $color-primary;
-        color: $color-black;
-        border: 2px solid $color-primary;
+        background-color: $color-sec;
+        color: $color-light;
+        border: 2px solid $color-sec;
     }
 
     &--button:hover{
-        background-color: white;
-        color:  $color-black;
+        background-color: $color-sec;
+        color:  $color-light;
     }
 }

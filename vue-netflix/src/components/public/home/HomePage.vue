@@ -1,24 +1,38 @@
 <template>
     <div class="home-page">
-        <BannerView/>
+        <NavBarVue
+        />
+        <BannerComp 
+            first="Unlimited movies, TV shows, and more"
+            third="Watch anywhere. Cancel anytime."
+            fourth="We plug Individuals, Startups, SMEs and Higher Education"
+            button="Get Started"
+        />
     </div>
 </template>
 
 
 <script setup lang="ts">
 // Imports
-import BannerView from './BannerView.vue';
+import BannerComp from '../../reusables/BannerComp.vue';
+import NavBarVue from './NavBar.vue';
+
 
 </script>
 
 <style lang="scss" scoped>
 
+// .home-page {
+//     position: relative;
+// }
 .home-page {
-    background-image: url('~@/assets/images/img_1/wrk.png');
+    background-image: 
+        url('@/assets/images/img_1/overlay.png'),
+        url('@/assets/images/img_1/bck.jpg');
     background-position:center;
     background-size:cover;
-    // padding-top: 7rem;
-    height: 100vh;
+    height: 80vh;
+    opacity: rgb(0 0 0 / 40%);
 }
 
 @media (min-width: 1024px) {
