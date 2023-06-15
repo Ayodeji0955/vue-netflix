@@ -1,17 +1,25 @@
 <template>
     <div class="home-page">
-        <h1>This is an about page</h1>
+        <BannerView/>
     </div>
 </template>
 
 
 <script setup lang="ts">
 // Imports
-
+import BannerView from './BannerView.vue';
 
 </script>
 
 <style lang="scss" scoped>
+
+.home-page {
+    background-image: url('~@/assets/images/img_1/wrk.png');
+    background-position:center;
+    background-size:cover;
+    // padding-top: 7rem;
+    height: 100vh;
+}
 
 @media (min-width: 1024px) {
     .about {
