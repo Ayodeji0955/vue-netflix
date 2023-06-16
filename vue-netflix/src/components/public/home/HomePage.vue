@@ -9,6 +9,10 @@
             button="Get Started"
         />
     </div>
+    <hr class="home-page__hr">
+    <EnjoyTv/>
+    <DownloadComp />
+    <WatchComp />
 </template>
 
 
@@ -16,6 +20,9 @@
 // Imports
 import BannerComp from '../../reusables/BannerComp.vue';
 import NavBarVue from './NavBar.vue';
+import EnjoyTv from './EnjoyTv.vue';
+import DownloadComp from './DownloadComp.vue';
+import WatchComp from './WatchComp.vue';
 
 
 </script>
@@ -33,6 +40,11 @@ import NavBarVue from './NavBar.vue';
     background-size:cover;
     height: 80vh;
     opacity: rgb(0 0 0 / 40%);
+
+    &__hr {
+        border: 5px solid grey;
+        margin: 0 0;
+    }
 }
 
 @media (min-width: 1024px) {
