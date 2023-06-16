@@ -8,9 +8,11 @@
             fourth="We plug Individuals, Startups, SMEs and Higher Education"
             button="Get Started"
         />
-        <hr class="home-page__hr">
-        <EnjoyTv/>
     </div>
+    <hr class="home-page__hr">
+    <EnjoyTv/>
+    <DownloadComp />
+    <WatchComp />
 </template>
 
 
@@ -19,6 +21,8 @@
 import BannerComp from '../../reusables/BannerComp.vue';
 import NavBarVue from './NavBar.vue';
 import EnjoyTv from './EnjoyTv.vue';
+import DownloadComp from './DownloadComp.vue';
+import WatchComp from './WatchComp.vue';
 
 
 </script>
@@ -39,6 +43,7 @@ import EnjoyTv from './EnjoyTv.vue';
 
     &__hr {
         border: 5px solid grey;
+        margin: 0 0;
     }
 }
 
